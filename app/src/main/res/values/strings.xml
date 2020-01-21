@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_note_list">NoteListActivity</string>
+    <string name="note_placeholder_text">Empty note</string>
+    <string name="title_activity_note_details">NoteDetails</string>
+
+    <string name="details_text_value_hint">Put your note here</string>
+    <string name="details_title_hint">Name</string>
+    <string name="add_item_action">Add item</string>
+    <string name="more_items_format">%d more items</string>
+    <string name="cancel_action">Cancel</string>
+    <string name="new_note_action">New note</string>
+
+    <string-array name="note_content_types">
+        <item>Text</item>
+        <item>Check list</item>
+    </string-array>
+
+</resources>

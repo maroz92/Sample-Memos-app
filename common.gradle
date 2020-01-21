@@ -1,0 +1,55 @@
+buildscript {
+    ext {
+        config = [
+                compileSdkVersion: 28,
+                minSdkVersion    : 23,
+                targetSdkVersion : 28
+        ]
+
+        versions = [
+                kotlin              : "1.3.50",
+                gradle              : "3.3.2",
+
+                appCompat           : "1.1.0",
+                material            : "1.0.0",
+                kotlinxSerialization: "0.14.0",
+
+                rxJava              : "2.2.15",
+                rxJavaAndroid       : "2.1.1",
+                constraintLayout    : "1.1.3",
+
+                junit               : "4.12",
+                mockitoKotlin       : "2.2.0",
+                assertJ             : "3.14.0",
+                robolectric         : "4.3",
+                testCore            : "1.2.0",
+        ]
+
+        mainDependencies = [
+                kotlinStdlib        : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin",
+
+                appCompat           : "androidx.appcompat:appcompat:$versions.appCompat",
+                constraintLayout    : "androidx.constraintlayout:constraintlayout:$versions.constraintLayout",
+                material            : "com.google.android.material:material:$versions.material",
+
+                rxJava              : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+                rxAndroid           : "io.reactivex.rxjava2:rxandroid:$versions.rxJavaAndroid",
+                kotlinxSerialization: "org.jetbrains.kotlinx:kotlinx-serialization-runtime:$versions.kotlinxSerialization",
+        ]
+
+        testDependencies = [
+                junit        : "junit:junit:$versions.junit",
+                mockitoKotlin: "com.nhaarman.mockitokotlin2:mockito-kotlin:$versions.mockitoKotlin",
+                assertJ      : "org.assertj:assertj-core:$versions.assertJ",
+                robolectric  : "org.robolectric:robolectric:$versions.robolectric",
+                testCore     : "androidx.test:core:$versions.testCore",
+        ]
+
+        classpathDependencies = [
+                gradle             : "com.android.tools.build:gradle:$versions.gradle",
+                googleServices     : "com.google.gms:google-services:$versions.googleServices",
+                kotlinGradlePlugin : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
+                kotlinSerialization: "org.jetbrains.kotlin:kotlin-serialization:$versions.kotlin",
+        ]
+    }
+}

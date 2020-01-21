@@ -1,0 +1,23 @@
+buildscript {
+    apply from: "$rootDir/common.gradle"
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath classpathDependencies.gradle
+        classpath classpathDependencies.kotlinGradlePlugin
+        classpath classpathDependencies.kotlinSerialization
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
